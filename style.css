@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+  --main: #141414;
+}
+
+* {
+  padding: none;
+  border: none;
+  outline: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--main);
+  grid-gap: 10rem;
+  height: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 20fr 4fr 6fr 6fr 4fr;
+  background-color: var(--main);
+  width: 26rem;
+  height: 40rem;
+  border-radius: 1.5rem;
+  box-shadow:  2rem 2rem 4rem #080808, 
+              -2rem -2rem 4rem #202020;
+}
+
+.card .text {
+  display: grid;
+  grid-template-rows: 2.5fr 1.5fr;
+  color: white;
+  margin: auto;
+}
+
+.card h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: .2em;
+}
+
+.card h4 {
+  margin: auto;
+  font-weight: 400;
+}
+
+.pp {
+  max-width: 14rem;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+
+.resume-container {
+  margin: auto;
+}
+
+.btn-large {
+  height: 3rem;
+  width: 16rem;
+  border-radius: 1.5rem;
+  margin: auto;
+  transition: 0.3s;
+  background-size: 200% auto;
+  box-shadow: 0px 0px 10px #03ff82;
+  background-image: linear-gradient(145deg, #23B738 0%, #177724 44%, #177724 56%, #23B738 100%);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: aliceblue;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.btn-large:hover {
+  box-shadow: 0px 0px 10px #03ff82;
+  background-position: center
+}
+
+.btn-large:active {
+  background-position: right center;
+  box-shadow: 0px 0px 10px rgba(3, 255, 130. .5);
+}
+
+.other-btn {
+  margin: auto;
+  display: grid;
+  grid-gap: 2.75rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn-small {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+
+.btn-small:hover {
+  background-position: center;
+  cursor: pointer;
+}
+
+.btn-small:active {
+  background-position: right center;
+  cursor: pointer;
+}
+
+.btn-github {
+  background-image: linear-gradient(145deg, #765A9E 0%, #634C85 44%, #634C85 56%, #765A9E 100%);
+  box-shadow: 0px 0px 10px #634C85;
+}
+
+.btn-linkedin {
+  background-image: linear-gradient(145deg, #007FC2 0%, #006BA3 44%, #006BA3 56%, #007FC2 100%);
+  box-shadow: 0px 0px 10px #006BA3;
+}
+
+.btn-gmail {
+  background-image: linear-gradient(145deg, #FA4839 0%, #D33C30 44%, #D33C30 56%, #FA4839 100%);
+  box-shadow: 0px 0px 10px #D33C30;
+}
+
